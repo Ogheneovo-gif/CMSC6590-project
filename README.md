@@ -1,4 +1,6 @@
 # CMSC6950 Torsional Axisymmetric Core Oscillations Visualiser 
+# Ogheneovo Mclarry Eduiyovwiri
+
 
 Software: https://github.com/sam-greenwood/taco_vis
 
