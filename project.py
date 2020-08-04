@@ -19,5 +19,6 @@ f = FLOW(u)
 f.speed = 5
 
 #Animate
-f.plot_cylinders(animate=False, save=False, time_idx=0)
-f.plot_cylinders_3D(animate=False, save=False, time_idx=0)
+f.image_filename = 'myplot.png'
+f.plot_cylinders(animate=False, save=True, time_idx=0)
+f.plot_cylinders_3D(animate=False, save=True, time_idx=0)
