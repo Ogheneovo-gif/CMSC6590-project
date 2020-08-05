@@ -1,11 +1,11 @@
-report.pdf: report.tex myplot1.png myplot2.png 
-	latexmk -pdf
+processed_data.pkl: cox_etal_2013.txt process_data.py
+	     python3 process_data.py
 
-myplot1.png: cox_etal_2013.txt project.py
-	python3 cylinders_3D.py
+plot1.png: processed_data.pkl make_myplot1.py
+	     python3 make_myplot1.py
 
-myplot2.png: cox_etal_2013.txt project.py
-	python3 project.py
+plot2.png: processed_data.pkl make_myplot1.py
+	     python make_myplot2.py
 
 .PHONY: clean almost_clean
 
