@@ -1,0 +1,18 @@
+report.pdf: report.tex myplot1.png myplot2.png
+	latexmk -pdf
+
+myplot1.png: cox_etal_2013.txt project.py
+	project.py
+
+myplot2.png: cox_etal_2013.txt project.py
+	project.py
+
+.PHONY: clean almost_clean
+
+clean: almost_clean
+	rm report.pdf
+	rm myplot1.png
+	rm myplot2.png
+
+almost_clean:
+	latexmk -c
