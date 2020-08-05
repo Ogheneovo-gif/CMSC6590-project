@@ -1,5 +1,5 @@
 
-m matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
 import pandas as pd
 data_file = './cox_etal_2013.txt'  #Data file
