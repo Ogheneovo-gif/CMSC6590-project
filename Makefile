@@ -2,7 +2,7 @@ report.pdf: report.tex myplot1.png myplot2.png
 	latexmk -pdf
 
 myplot1.png: cox_etal_2013.txt project.py
-	project.py
+	python3 project.py
 
 myplot2.png: cox_etal_2013.txt project.py
 	project.py
