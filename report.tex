@@ -1,9 +1,9 @@
-\documentclass{report}
+\documentclass{article}
 \usepackage{graphicx}
+\usepackage{float}
 \title{Torsional Axisymmetric Core Oscillations Visualiser} 
 \author{Ogheneovo Mclarry Eduiyovwiri}
 \date{August 5, 2020}
-\graphicspath{ {images/} }
 \begin{document}
 \maketitle
 \section{Introduction}
@@ -12,27 +12,40 @@ TACO-VIS provides a simple set of Python visualisation tools for 2D flow velocit
 
 \section{Dataset}
 
-In this report we will be using this  software to write python script that produces the 3D animation of the Cox et al. (2013) azimuthal component of velocity, contour plots data to communicate the geometry of the waves within the spherical core.
-It was meant to help visualize the spatially dependant modulating effect from the earth's magnetic field observations of which the torsional oscillations can constrain the strength of the magnetic field hidden deep inside the core.
+In this report we will be using this software to write python script that produces the 3D animation of the Cox et al. (2013) azimuthal component of velocity, contour plots data to communicate the geometry of the waves within the spherical core as shown in figure 2.
+
+It was meant to help visualize the spatially dependant modulating effect from the earth's magnetic field observations of which the torsional oscillations can constrain the strength of the magnetic field hidden deep inside the core as seen in figure 1.
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{myplot1.png}
-    \includegraphics[width=0.3\textwidth]{myplot2.png}
-    \caption{A 3D and 2D visualisation of data from Cox et al. (Cox et al., 2013) approximated by 15 cylinders. The azimuthal velocity scale shown is non-dimensional and shared by both figures}
-    \label{fig:mesh1}
+\begin{figure}[H]
+	    \centering
+	        \includegraphics[height=3in]{myplot1.png}
+		    \includegraphics[height=3in]{myplot2.png}
+		        \caption{Contour plot of the velocity of torsional waves in an equatorially symmetric spherical shell.}\label{visina8}
+			    
 \end{figure}
- 
-\section{Benefits of TACO-VIS include:}
-\begin{itemize}
-\item .The tools require only the commonly available Python packages numpy and matplotlib and the well maintained ffmpeg framework.
+\begin{figure}[H]
+	    \centering
+	        \includegraphics[width=0.6\textwidth]{myplot3.png}
+		    \includegraphics[width=0.6\textwidth]{myplot4.png} 
+		        \caption{A 3D and 2D visualisation of data from Cox et al. (Cox et al., 2013) approximated by 15 cylinders. The azimuthal velocity scale shown is non-dimensional and shared by both figures}
+			     \label{fig:mesh1}
+\end{figure}
 
-\item .Generating an animation can be done in just a simple few lines of code, with examples provided.
+    
+        
 
-\item .All plots and movies are of publication grade, with user choices for the titles, resolution and frame rate of saved images/movie files.
-\item .The matplotlib animations often draw fast enough to be suitable to be viewed live (dataset depending) without the need to encode to a movie file first.
 
-\end{itemize}
+
+	\section{Benefits of TACO-VIS include:}
+	\begin{itemize}
+		\item .The tools require only the commonly available Python packages numpy and matplotlib and the well maintained ffmpeg framework.
+
+		\item .Generating an animation can be done in just a simple few lines of code, with examples provided.
+
+		\item .All plots and movies are of publication grade, with user choices for the titles, resolution and frame rate of saved images/movie files.
+		\item .The matplotlib animations often draw fast enough to be suitable to be viewed live (dataset depending) without the need to encode to a movie file first.
+
+	\end{itemize}
 
 \end{document}
