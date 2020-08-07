@@ -6,16 +6,26 @@
 \date{August 5, 2020}
 \begin{document}
 \maketitle
-\section{Introduction}
+\section{Abstract}
 TACO-VIS provides a simple set of Python visualisation tools for 2D flow velocity data from fluid planetary interiors. It is mainly intended for animating torsional wave models for publication and presentation purposes. TACO-VIS is a lightweight module built only upon the common numpy/matplotlib Python packages and is free to be used and modified as the user requires.
 
+\section{Introduction}
+
+The dynamics of liquid planetary cores is fundamental to planetary-scale phenomena such as the generation of a magnetic field.
+
+Understanding the relevant processes is a complex taxk because the fluid motion includes a wide range of conventive and oscillatary behaviour.
+
+\section{Problem}
+Earth as a rapidly rotating planent has such important type of dynamic behaviour known as Longitudunal Torsonal Oscillations of concentric cylinders aligned with the rotation axis, each of which spans the height of a spherical core.
+Before now, these oscillations can only be visualized by the standard 2D contour plots but do not communicate the geometry of the waves within the spherical core.
 
 \section{Dataset}
 
-In this report we will be using this software to write python script that produces the 3D animation of the Cox et al. (2013) azimuthal component of velocity, contour plots data to communicate the geometry of the waves within the spherical core as shown in figure 2.
+In this report we will be using this software to write python script that produces the 3D animation of the Cox et al. (2013) azimuthal component of velocity, contour plots data to communicate the geometry of the waves within it's spherical core.
 
-It was meant to help visualize the spatially dependant modulating effect from the earth's magnetic field observations of which the torsional oscillations can constrain the strength of the magnetic field hidden deep inside the core as seen in figure 1.
+\section{Result}
 
+In addressing the problem stated above, Taco-vis python package which takes core flow velocity data for torsional waves helps visualized as a series of rotating concentric cylinders in a either a full 3D visualization or a 2D as a slice through the equatoral plane as seen in figure 2.
 
 \begin{figure}[H]
 	    \centering
@@ -32,11 +42,7 @@ It was meant to help visualize the spatially dependant modulating effect from th
 \end{figure}
 
     
-        
-
-
-
-	\section{Benefits of TACO-VIS include:}
+\section{Benefits of TACO-VIS include:}
 	\begin{itemize}
 		\item .The tools require only the commonly available Python packages numpy and matplotlib and the well maintained ffmpeg framework.
 
